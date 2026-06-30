@@ -29,14 +29,21 @@ Establish the technical foundation of Verdis by setting up the development envir
 * [x] Understand MaterialApp
 * [x] Understand Scaffold
 * [x] Understand BuildContext
-* [x] Replace default Flutter counter application
+* [x] Understand const constructors
+* [x] Replace the default Flutter counter application
 
-### Remaining Work
+### UI
 
-* [ ] Create Splash Screen
+* [x] Create initial Splash Screen
 * [ ] Create application theme
-* [ ] Separate widgets into dedicated files
-* [ ] Create initial navigation
+* [ ] Create Home Screen
+* [ ] Create navigation flow
+
+### Architecture
+
+* [x] Separate application into multiple files
+* [x] Introduce feature-based folder structure
+* [ ] Create reusable widgets
 * [ ] Understand StatefulWidget
 
 ---
@@ -49,7 +56,7 @@ Establish the technical foundation of Verdis by setting up the development envir
 * Project documentation initialized
 * Feature-first architecture established
 * Initial Verdis application running
-* Fundamental Flutter concepts understood
+* First custom Splash Screen implemented
 
 ---
 
@@ -59,23 +66,32 @@ Establish the technical foundation of Verdis by setting up the development envir
 
 * Created the Verdis repository.
 * Configured Git and SSH authentication.
-* Installed and verified Flutter.
+* Installed Flutter.
+* Verified emulator setup.
+* Created initial documentation.
 * Organized the project structure.
-* Created project documentation.
 
 ### Day 2
 
+* Learned Flutter fundamentals.
+* Understood Widget Tree.
+* Understood BuildContext.
+* Learned MaterialApp and Scaffold.
 * Replaced the default Flutter demo application.
-* Built the first custom Flutter interface.
-* Learned the Flutter widget hierarchy.
-* Understood MaterialApp, Scaffold, BuildContext and the widget tree.
-* Prepared the project for implementing the first real screens.
+
+### Day 3
+
+* Refactored the project into separate files.
+* Created the Splash Screen.
+* Learned proper widget responsibilities.
+* Practiced Flutter UI composition using Column, Icon, Text and Container.
+* Introduced code review workflow.
 
 ---
 
 ## Notes
 
-Sprint 1 focuses on creating a solid technical foundation before implementing application features. Investing time in architecture and understanding Flutter fundamentals now will simplify future development.
+Sprint 1 focuses on building a solid technical foundation before implementing application features. Time invested in architecture and understanding Flutter fundamentals will simplify future development.
 
 ---
 
@@ -83,20 +99,21 @@ Sprint 1 focuses on creating a solid technical foundation before implementing ap
 
 ### What went well
 
-* Development environment successfully configured.
-* Git workflow is functioning correctly.
-* Flutter fundamentals are becoming well understood.
-* Project architecture is organized and scalable.
+* Project architecture continues to evolve cleanly.
+* Flutter fundamentals are becoming intuitive.
+* Successfully created the first custom screen.
+* Git workflow is becoming natural.
 
 ### Challenges
 
-* GitHub SSH authentication required additional configuration.
-* Understanding BuildContext and the widget tree required deeper study.
+* Understanding when to use const.
+* Learning how to build responsive layouts.
+* Choosing appropriate Flutter widgets for spacing and layout.
 
 ### Lessons Learned
 
-* GitHub no longer supports password authentication for Git operations.
-* Git does not track empty directories.
-* Flutter applications are built as a hierarchy of widgets.
-* BuildContext represents a widget's position in the widget tree.
-* Investing time in understanding fundamentals before writing features makes development easier.
+* Widgets should have a single responsibility.
+* Screens should live in their own files.
+* const is based on constructor arguments, not whether a widget eventually changes.
+* Flutter layouts are composed from small reusable widgets.
+* Thinking about architecture first makes implementation easier.
